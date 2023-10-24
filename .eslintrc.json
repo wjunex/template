@@ -1,0 +1,28 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:vue/vue3-essential"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "parser": "@typescript-eslint/parser",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "@typescript-eslint",
+      "vue"
+    ],
+    "rules": {
+      "indent": ["error", 2], // 2个空格的缩进
+      "linebreak-style": ["error", "unix"], // 换行符风格
+      "quotes": ["error", "single"], // 使用单引号
+      "semi": ["error", "always"], // 总是要分号
+      "no-unused-vars": "warn", // 警告未使用的变量
+      "no-console": "off" // 允许使用 console
+    }
+  }
