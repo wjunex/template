@@ -12,18 +12,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue';
 const menu = ref([
   {
-    name: '示例',
+    name: '导航',
     children: [
-      { name: '组件', path: '/component' },
-      { name: '组件', path: '/component' },
-      { name: '组件', path: '/component' },
-      { name: '组件', path: '/component' },
+      { name: '布局样式', path: '/component' },
     ]
   }
-])
+]);
 </script>
 
 <style scoped lang='scss'>
