@@ -1,15 +1,20 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from "vue-router";
 
 const routes = [
   {
-    path: '/',
-    redirect: '/home'
+    path: "/",
+    redirect: "/home",
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: () => import('@/views/HomePage.vue')
-  }
+    path: "/home",
+    name: "HomePage",
+    component: () => import("@/views/HomePage.vue"),
+  },
+  {
+    path: "/label-box",
+    name: "LabelBox",
+    component: () => import("@/views/TestPage/index.vue"),
+  },
 ];
 
 const router = createRouter({
